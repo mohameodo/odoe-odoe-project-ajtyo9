@@ -1,0 +1,65 @@
+/* Custom styles for Leaflet and other elements that are easier to manage here than with Tailwind utilities */
+
+body {
+    background-image: url('https://www.transparenttextures.com/patterns/subtle-leaves.png');
+}
+
+#map {
+    z-index: 10;
+}
+
+/* Customizing the routing line */
+.leaflet-routing-container .leaflet-routing-alt {
+    display: none; /* Hides the instruction box */
+}
+
+.leaflet-routing-line {
+    stroke: #87CEEB !important; /* sky-blue */
+    stroke-width: 5 !important;
+    stroke-opacity: 0.8 !important;
+}
+
+/* Custom scrollbar for a more modern look */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #4A6C3A; /* nature-green */
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #6B9057; /* nature-green-light */
+}
+
+.leaflet-popup-content-wrapper {
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.leaflet-popup-content {
+    margin: 15px !important;
+}
+
+.leaflet-popup-tip {
+    background: white;
+}
+
+.location-popup h3 {
+    margin: 0 0 5px 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #4A6C3A;
+}
+
+.location-popup p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #333333;
+}
